@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 /**
+ * 打开应用的欢迎界面
  * Created by Roy_Sun on 2016/2/16 0016.
  */
 public class SplashActivity extends Activity {
