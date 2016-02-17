@@ -6,7 +6,8 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
+        android:gravity="bottom"
         android:text="发票抬头"
         android:textSize="20sp" />
 
@@ -20,10 +21,17 @@
         android:layout_height="wrap_content">
 
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="个人" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                style="@style/BaseText"
+                android:layout_centerInParent="true"
+                android:text="个人" />
+
+            <RadioButton style="@style/SpecialRadioButton" />
+        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -32,16 +40,30 @@
             android:layout_marginRight="15dp"
             android:background="#8a8787" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="单位" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
 
+            <TextView
+                style="@style/BaseText"
+                android:layout_centerInParent="true"
+                android:text="单位" />
+
+            <RadioButton style="@style/SpecialRadioButton" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#8a8787" />
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
+        android:gravity="bottom"
         android:text="发票抬头"
         android:textSize="20sp" />
 
@@ -59,19 +81,33 @@
             android:layout_height="48dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/BaseText"
                 android:layout_centerInParent="true"
-                android:text="图书"
-                android:textSize="20sp" />
+                android:text="图书" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:textSize="16sp" />
+            <RadioButton style="@style/SpecialRadioButton" />
+
+
         </RelativeLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#8a8787" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                style="@style/BaseText"
+                android:layout_centerInParent="true"
+                android:text="音响" />
+
+            <RadioButton style="@style/SpecialRadioButton" />
+        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -80,11 +116,17 @@
             android:layout_marginRight="15dp"
             android:background="#8a8787" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="音响"
-            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                style="@style/BaseText"
+                android:layout_centerInParent="true"
+                android:text="游戏" />
+
+            <RadioButton style="@style/SpecialRadioButton" />
+        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -93,28 +135,27 @@
             android:layout_marginRight="15dp"
             android:background="#8a8787" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="游戏"
-            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                style="@style/BaseText"
+                android:layout_centerInParent="true"
+                android:text="软件" />
+
+            <RadioButton style="@style/SpecialRadioButton" />
+        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:background="#8a8787" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="软件"
-            android:textSize="16sp" />
     </RadioGroup>
 
     <Button
         style="@style/BaseButton"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="确定" />
 </LinearLayout>
