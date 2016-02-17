@@ -1,15 +1,41 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.roy_sun.awesomeshop_imitative.ui.fragment.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roy_sun.awesomeshop_imitative.ui.fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:textSize="36sp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="cart fragment" />
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="82dp"
+            android:src="@mipmap/on_goods" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shopcart"
+            android:layout_marginBottom="74dp"
+            android:layout_toEndOf="@+id/shopcart"
+            android:layout_toRightOf="@+id/shopcart"
+            android:text="你的购物车里没有商品，快去挑选你喜欢的商品吧！"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fm_cart_shop"
+            style="@style/BaseButton"
+            android:layout_below="@+id/shopcart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="随便逛逛" />
+    </RelativeLayout>
 </FrameLayout>
