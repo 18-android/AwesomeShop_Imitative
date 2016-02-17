@@ -5,6 +5,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="home">主页</string>
+    <string name="hot">热门</string>
+    <string name="category">发现</string>
+    <string name="cart">购物车</string>
+    <string name="mine">我</string>
 
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
