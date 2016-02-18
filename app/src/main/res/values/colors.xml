@@ -6,4 +6,5 @@
     <!--淡灰色-->
     <color name="gainsboro">#dcdcdc</color>
     <color name="white">#ffffff</color>
+    <color name="common_red">#9000</color>
 </resources>
