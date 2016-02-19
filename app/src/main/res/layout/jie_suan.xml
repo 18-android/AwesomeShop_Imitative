@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:gravity="bottom"
-        android:text="发票抬头"
+        android:text="发票类型"
         android:textSize="20sp" />
 
     <TextView

@@ -1,15 +1,38 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.roy_sun.awesomeshop_imitative.ui.fragment.HomeFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.roy_sun.awesomeshop_imitative.ui.fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:textSize="36sp"
-        android:gravity="center"
+    <com.roy_sun.awesomeshop_imitative.ui.CustomToolBar
+        android:id="@id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="home fragment" />
 
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowSearchView="true" />
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal|top"
+        app:auto_cycle="true"
+        app:indicator_visibility="visible"
+        app:pager_animation="Accordion"
+        app:pager_animation_span="1100" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        />
+
+
+</LinearLayout>

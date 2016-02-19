@@ -35,16 +35,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initTabs() {
-        TabHostBean tab_home = new TabHostBean(HomeFragment.class, R.string.home,
-                                               R.drawable.selector_icon_home);
-        TabHostBean tab_hot = new TabHostBean(HotFragment.class, R.string.hot,
-                                              R.drawable.selector_icon_hot);
-        TabHostBean tab_category = new TabHostBean(CategoryFragment.class, R.string.category,
-                                                   R.drawable.selector_icon_category);
-        TabHostBean tab_cart = new TabHostBean(CartFragment.class, R.string.cart,
-                                               R.drawable.selector_icon_cart);
-        TabHostBean tab_mine = new TabHostBean(MineFragment.class, R.string.mine,
-                                               R.drawable.selector_icon_mine);
+        TabHostBean tab_home = new TabHostBean(HomeFragment.class, R.string.home, R.drawable.selector_icon_home);
+        TabHostBean tab_hot = new TabHostBean(HotFragment.class, R.string.hot, R.drawable.selector_icon_hot);
+        TabHostBean tab_category = new TabHostBean(CategoryFragment.class, R.string.category, R.drawable.selector_icon_category);
+        TabHostBean tab_cart = new TabHostBean(CartFragment.class, R.string.cart, R.drawable.selector_icon_cart);
+        TabHostBean tab_mine = new TabHostBean(MineFragment.class, R.string.mine, R.drawable.selector_icon_mine);
 
 
         mTabs.add(tab_home);
@@ -59,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
         mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
         for (TabHostBean tab : mTabs) {
-            TabHost.TabSpec tabSpec  = mTabHost.newTabSpec(getString(tab.getTitle()));
+            TabHost.TabSpec tabSpec = mTabHost.newTabSpec(getString(tab.getTitle()));
 
             tabSpec.setIndicator(buildIndicator(tab));
 
-            mTabHost.addTab(tabSpec,tab.getFragment(),null);
+            mTabHost.addTab(tabSpec, tab.getFragment(), null);
         }
 
         mTabHost.setCurrentTab(0);
