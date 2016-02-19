@@ -11,6 +11,7 @@
         android:background="#ffffff">
 
         <ImageView
+            android:id="@+id/register_go_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -22,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="注册"
+            android:textColor="#f484ba"
             android:textSize="24dp" />
     </RelativeLayout>
 
@@ -44,6 +46,7 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:id="@+id/register_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -54,13 +57,14 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="10dp"
                     android:background="#aca8a8" />
 
                 <EditText
+                    android:id="@+id/register_userpwd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -72,13 +76,14 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="10dp"
                     android:background="#aca8a8" />
 
                 <EditText
+                    android:id="@+id/register_reuserpwd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -88,6 +93,24 @@
                     android:hint="确认密码"
                     android:textSize="14dp" />
             </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/regist_bg">
+
+                <TextView
+                    android:id="@+id/register_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="注册"
+                    android:textColor="#fff" />
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
