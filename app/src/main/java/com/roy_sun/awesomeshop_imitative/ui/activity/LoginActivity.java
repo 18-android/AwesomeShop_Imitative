@@ -58,6 +58,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
      * 登录
      */
     private void login() {
+
         String userName = mUsername.getText().toString().trim();
         String userPwd = mUserpwd.getText().toString().trim();
         if (userName.isEmpty()) {

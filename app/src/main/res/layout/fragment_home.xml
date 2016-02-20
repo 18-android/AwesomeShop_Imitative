@@ -1,38 +1,177 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context="com.roy_sun.awesomeshop_imitative.ui.fragment.HomeFragment">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <com.roy_sun.awesomeshop_imitative.ui.CustomToolBar
-        android:id="@id/toolbar"
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        app:isShowSearchView="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fragment_home_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
 
-    <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_gravity="center_horizontal|top"
-        app:auto_cycle="true"
-        app:indicator_visibility="visible"
-        app:pager_animation="Accordion"
-        app:pager_animation_span="1100" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        />
+                    <ImageButton
+                        android:id="@+id/fragment_home_iv_time"
+                        style="@style/ImageButtonStyle"
+                        android:src="@mipmap/category1"/>
 
+                    <ImageButton
+                        android:id="@+id/fragment_home_iv_sale"
+                        style="@style/ImageButtonStyle"
+                        android:src="@mipmap/category2"/>
 
+                    <ImageButton
+                        android:id="@+id/fragment_home_iv_new"
+                        style="@style/ImageButtonStyle"
+                        android:src="@mipmap/category3"/>
+
+                    <ImageButton
+                        android:id="@+id/fragment_home_iv_hot"
+                        style="@style/ImageButtonStyle"
+                        android:src="@mipmap/category4"/>
+
+                    <ImageButton
+                        android:id="@+id/fragment_home_iv_recommend"
+                        style="@style/ImageButtonStyle"
+                        android:src="@mipmap/category5"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@mipmap/ad"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:src="@mipmap/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/qg1"/>
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/qg2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/qg3"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:src="@mipmap/line"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/qg4"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/qg5"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="————【潮流前线】————"
+                android:textColor="@color/Black"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_home_fashion_iv_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/home_title_pic1"/>
+
+                <ImageView
+                    android:id="@+id/fragment_home_fashion_iv_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/home_title_pic2"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="————【实时推荐你喜欢的宝贝】————"
+                android:textColor="@color/Black"
+                android:lines="1"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
