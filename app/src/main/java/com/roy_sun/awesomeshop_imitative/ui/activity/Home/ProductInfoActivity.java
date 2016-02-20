@@ -82,6 +82,7 @@ public class ProductInfoActivity extends Activity {
                             mViewpager.setAdapter(new ProductPicAdapter());
                         }
                     });
+
                 }
             }
         });
