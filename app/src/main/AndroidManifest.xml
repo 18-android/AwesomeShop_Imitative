@@ -25,6 +25,13 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.RegisterActivity"/>
+
+        <activity android:name=".ui.activity.Home.SaleActivity"/>
+        <activity android:name=".ui.activity.Home.TimeActivity"/>
+        <activity android:name=".ui.activity.Home.HotActivity"/>
+        <activity android:name=".ui.activity.Home.NewActivity"/>
+        <activity android:name=".ui.activity.Home.RecommendActivity"/>
+        <activity android:name=".ui.activity.Home.ProductInfoActivity"/>
     </application>
 
 </manifest>
