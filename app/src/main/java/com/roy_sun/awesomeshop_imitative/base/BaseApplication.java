@@ -1,8 +1,8 @@
 package com.roy_sun.awesomeshop_imitative.base;
 
-import com.roy_sun.awesomeshop_imitative.utils.UIUtils;
-
 import android.app.Application;
+
+import com.roy_sun.awesomeshop_imitative.utils.UIUtils;
 
 /**
  * application创建时加载的工具
@@ -10,10 +10,13 @@ import android.app.Application;
  */
 public class BaseApplication extends Application {
 
+
     @Override
     public void onCreate() {
         super.onCreate();
 
+
         UIUtils.init(this);
     }
+
 }

@@ -12,4 +12,7 @@ public class Constants {
         public static final String PAYTYPE_UUPAY    = "2";
         public static final String PAYTYPE_WEIXIN   = "3";
     }
+    public static final class URL{
+         public static final String BASE_HOME_URL = "http://188.188.1.6:8080/market";
+    }
 }

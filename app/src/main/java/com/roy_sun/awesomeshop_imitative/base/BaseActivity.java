@@ -7,4 +7,5 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Roy_Sun on 2016/2/17 0017.
  */
 public class BaseActivity extends AppCompatActivity {
+
 }
